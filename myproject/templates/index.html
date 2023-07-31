@@ -12,6 +12,10 @@
         <button type="submit" name="item" value="A">購入A</button>
         <button type="submit" name="item" value="B">購入B</button>
     </form>
+    
+    <form method="get" action="{% url 'kill_session' %}">
+        <button type="submit" name="kill_session" >セッションを消す</button>
+    </form>
     <a href="{% url 'cart' %}">カートを見る</a>
 </body>
 </html>
