@@ -1,0 +1,16 @@
+<!-- cart/view_cart.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>カート</title>
+</head>
+<body>
+    <h1>カートの中身</h1>
+    <ul>
+        {% for item in cart_items %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

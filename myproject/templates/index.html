@@ -1,0 +1,17 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>商品一覧</title>
+</head>
+<body>
+    <h1>商品一覧</h1>
+    <form method="post" action="{% url 'add_to_cart' 'item' %}">
+        {% csrf_token %}
+        <button type="submit" name="item" value="A">購入A</button>
+        <button type="submit" name="item" value="B">購入B</button>
+    </form>
+    <a href="{% url 'cart' %}">カートを見る</a>
+</body>
+</html>
